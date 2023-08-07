@@ -64,12 +64,15 @@ WSGI_APPLICATION = "online_lab.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'mfzgHs5I8LgDEHpWyegW',
+        'HOST': 'containers-us-west-117.railway.app',   # Or an IP Address that your DB is hosted on
+        'PORT': '7252',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
