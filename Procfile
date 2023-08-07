@@ -1,1 +1,1 @@
-web: gunicorn online_lab.wsgi --log-file - 
+web: gunicorn 'online_lab.wsgi' --log-file - 
